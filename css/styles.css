@@ -1,6 +1,5 @@
 * {
     font-family: 'Lato', sans-serif;
-    
 }
 
 .bg-primary-color {
@@ -8,7 +7,7 @@
 }
 
 .bg-secondary-color {
-    background-color: #ece8ea;
+    background-color: #eff5e9;
 }
 
 .bg-dark-color {
@@ -20,7 +19,12 @@
 }
 
 .secondary-color {
-    color: #7a7a7a;
+    color: #79866d;
+}
+
+/* Âncoras (#treinos etc.) não ficam escondidas atrás da navbar sticky */
+html {
+    scroll-padding-top: 90px;
 }
 
 /*NAVBAR*/
@@ -32,19 +36,16 @@
 #navbar a:hover {
     color: #D9A441;
     font-weight: 700;
-   
 }
 
 #navbar a.active {
     border-bottom: 2px solid #26352D;
     font-weight: 700;
-    
 }
 
 .navbar-brand {
     display: flex;
     align-items: center;
-
 }
 
 .navbar-brand img {
@@ -71,3 +72,67 @@
     margin: 0 1em;
 }
 
+/* HERO
+   Não precisa mais de padding-top para compensar a navbar:
+   ela é sticky-top, então ocupa espaço no fluxo da página. */
+#hero {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-img {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.btn-success {
+    background-color: #D9A441;
+    border-color: #D9A441;
+}
+.btn-success:hover {
+    background-color: transparent;
+    border-color: #C4A233;
+    color: #C4A233;
+}
+
+.btn.btn-outline-dark {
+    border-color: #26352D;
+    color: #26352D;
+}
+
+.btn.btn-outline-dark:hover {
+    background-color: #26352D;
+    color: #F5F3ED;
+}
+
+/* Menu vertical centralizado em telas menores */
+@media (max-width: 991.98px) {
+    /* Com o menu sempre aberto a navbar fica alta; em telas menores ela rola junto com a página */
+    #navbar {
+        position: static;
+    }
+
+    html {
+        scroll-padding-top: 0;
+    }
+
+    #navbar-items .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    #navbar-items .nav-item {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    #navbar-items .nav-link {
+        padding: 0.75rem 0;
+    }
+}
