@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,7 +23,7 @@
 
     <!-- Css do projeto -->
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/responsividade.css">
+    
 </head>
 
 <body>
@@ -53,6 +54,9 @@
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a href="#" class="nav-link active primary-color" aria-current="page">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#recursos" class="nav-link primary-color">Recursos</a>
                         </li>
                         <li class="nav-item">
                             <a href="#treinos" class="nav-link primary-color">Treinos</a>
@@ -89,14 +93,184 @@
 
                     <!-- Imagem: aparece primeiro no mobile (order-1) e à direita no md+ (order-md-2) -->
                     <div class="col-12 col-md-6 order-1 order-md-2 text-center">
-                        <img src="img/foto-2.jpg" class="img-fluid hero-img"
-                            alt="Foto de treino">
+                        <img src="img/foto-2.jpg" class="img-fluid hero-img" alt="Foto de treino">
                     </div>
 
                 </div>
             </div>
         </section>
+
+        <!-- ETAPA 3: SEÇÃO DE CONTEÚDO -->
+
+        <section id="recursos" class="bg-secondary-color py-5"> <!-- py-5 é o padding vertical -->
+            <div class="container">
+                <div class="text-center mb-5"> <!-- Mb-5 é a margem inferior-->
+                    <h2 class="fw-bold primary-color">Tudo o que você precisa para evoluir</h2>
+                    <p class="secondary-color">Descubra os principais recursos do FitTrack para acompanhar seus treinos,
+                        hábitos e resultados.</p>
+                </div>
+
+                <!-- row-cols-1 row-cols-md-2 row-cols-lg-4 row-cols-xl-4 g-4: uma coluna no mobile, duas colunas no md+, quatro colunas no desktop e maior, com espaçamentogap de 4 -->
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 row-cols-xl-4 g-4">
+                    <div class="col">
+                        <div class="card h-100 d-flex flex-column">
+                            <!-- h-100 faz o card ter altura total dentro da coluna -->
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title primary-color">Treinos Personalizados</h5>
+                                <p class="card-text secondary-color">Crie e acompanhe seus treinos de forma
+                                    personalizada e eficiente.</p>
+
+                                <!-- badge é um rótulo visual que destaca informações importantes, como "Novo" e bg-success indica que é um badge de sucesso -->
+                                <span class="badge bg-primary align-self-start mb-3">Novo</span>
+                                <!-- Botão para acessar mais informações sobre o recurso, mt-auto faz o botão ir para o final do card -->
+                                <a href="#" class="btn btn-primary mt-auto">Ver Treinos</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 d-flex flex-column">
+                            
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title primary-color">Registro de Treinos</h5>
+                                <p class="card-text secondary-color">Anote séries, repetições e carga de cada treino de forma rápida e prática.</p>
+                                <span class="badge bg-success align-self-start mb-3">Essencial</span>
+                               
+                                <a href="#" class="btn btn-primary mt-auto">Registrar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 d-flex flex-column">
+                            
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title primary-color">Controle de Metas</h5>
+                                <p class="card-text secondary-color">Defina metas de peso, medidas e desempenho e acompanhe cada conquista.</p>
+                                <span class="badge bg-warning align-self-start mb-3">Popular</span>
+                               
+                                <a href="#" class="btn btn-primary mt-auto">Definir Metas</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 d-flex flex-column">
+                            
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title primary-color">Plano alimentar</h5>
+                                <p class="card-text secondary-color">Organize suas refeições do dia e mantenha a alimentação alinhada ao treino.</p>
+                                <span class="badge bg-success align-self-start mb-3">Saúde</span>
+                               
+                                <a href="#" class="btn btn-primary mt-auto">Ver Plano</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 d-flex flex-column">
+                            
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title primary-color">Contador de Calorias</h5>
+                                <p class="card-text secondary-color">Calcule o consumo e o gasto calórico diário e veja seu saldo em segundos.</p>
+                                <span class="badge bg-info align-self-start mb-3">Prático</span>
+                               
+                                <a href="#" class="btn btn-primary mt-auto">Calcular</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 d-flex flex-column">
+                            
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title primary-color">Evolução corporal</h5>
+                                <p class="card-text secondary-color">Compare o peso, medidas e fotos ao logo do tempo para visualizar sua evolução.</p>
+                                <span class="badge bg-primary align-self-start mb-3">Progresso</span>
+                               
+                                <a href="#" class="btn btn-primary mt-auto">Ver Evolução</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 d-flex flex-column">
+                            
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title primary-color">Corrida e Caminhada</h5>
+                                <p class="card-text secondary-color">Registre distância, tempo e ritmo das suas atividades ao ar livre.</p>
+                                <span class="badge bg-danger align-self-start mb-3">Em alta</span>
+                               
+                                <a href="#" class="btn btn-primary mt-auto">Iniciar atividade</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 d-flex flex-column">
+                            
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title primary-color">Hidratação</h5>
+                                <p class="card-text secondary-color">Defina sua meta diária de água e acompanhe quanto já consumiu ao longo do dia.</p>
+                                <span class="badge bg-info align-self-start mb-3">Bem-estar</span>
+                               
+                                <a href="#" class="btn btn-primary mt-auto">Acompanhar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 d-flex flex-column">
+                            
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title primary-color">Sono e Recuperação</h5>
+                                <p class="card-text secondary-color">Monitore a qualidade do seu sono e acompanhe sua recuperação.</p>
+                                <span class="badge bg-secondary align-self-start mb-3">Descanso</span>
+                               
+                                <a href="#" class="btn btn-primary mt-auto">Ver Sono</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 d-flex flex-column">
+                            
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title primary-color">Comunidade FitTrack</h5>
+                                <p class="card-text secondary-color">Troque dicas, compartilhe resultados e treine com pessoas que têm os mesmos objetivos.</p>
+                                <span class="badge bg-danger align-self-start mb-3">Em alta</span>
+                               
+                                <a href="#" class="btn btn-primary mt-auto">Entrar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 d-flex flex-column">
+                            
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title primary-color">Desafios Semanais</h5>
+                                <p class="card-text secondary-color">Participe de desafios semanais para manter a motivação e superar seus limites.</p>
+                                <span class="badge bg-warning align-self-start mb-3">Desafios</span>
+                               
+                                <a href="#" class="btn btn-primary mt-auto">Participar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 d-flex flex-column">
+                            
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title primary-color">Relatórios Detalhados</h5>
+                                <p class="card-text secondary-color">Receba resumos semanais e mensais sobre seu desempenho e progresso.</p>
+                                <span class="badge bg-dark align-self-start mb-3">Análise</span>
+                               
+                                <a href="#" class="btn btn-primary mt-auto">Ver Relatórios</a>
+                            </div>
+                        </div>
+                    </div>
+                            
+
+
+
+                </div>
+
+
+            </div>
+        </section>
+
     </main>
 
 </body>
+
 </html>

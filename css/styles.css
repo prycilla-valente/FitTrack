@@ -35,7 +35,7 @@ html {
 
 #navbar a:hover {
     color: #D9A441;
-    font-weight: 700;
+    
 }
 
 #navbar a.active {
@@ -72,9 +72,7 @@ html {
     margin: 0 1em;
 }
 
-/* HERO
-   Não precisa mais de padding-top para compensar a navbar:
-   ela é sticky-top, então ocupa espaço no fluxo da página. */
+/* HERO */
 #hero {
     min-height: 70vh;
     display: flex;
@@ -91,6 +89,7 @@ html {
 .btn-success {
     background-color: #D9A441;
     border-color: #D9A441;
+   
 }
 .btn-success:hover {
     background-color: transparent;
@@ -108,15 +107,45 @@ html {
     color: #F5F3ED;
 }
 
+/* SEÇÃO DE CONTEÚDO */
+
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px #26352D80;  
+    transition: transform 0.3s ease;
+   
+}
+
+.card:hover {
+    transform: scale(1.01);
+    
+}
+
+.btn-primary {
+    background-color: #D9A441;
+    border-color: #D9A441;
+}
+
+.btn-primary:hover {
+    background-color: transparent;
+    border-color: #26352D;
+    color: #26352D;
+    
+}
+
+/* Responsividade */
+
 /* Menu vertical centralizado em telas menores */
 @media (max-width: 991.98px) {
     /* Com o menu sempre aberto a navbar fica alta; em telas menores ela rola junto com a página */
     #navbar {
-        position: static;
+        position: static; /* deixa a navbar estática em telas menores */
     }
 
     html {
-        scroll-padding-top: 0;
+        scroll-padding-top: 0; /* remove o padding de rolagem em telas menores */
     }
 
     #navbar-items .navbar-nav {
