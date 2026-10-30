@@ -89,12 +89,22 @@ html {
 .btn-success {
     background-color: #D9A441;
     border-color: #D9A441;
+    color: #fff;
    
 }
 .btn-success:hover {
     background-color: transparent;
     border-color: #C4A233;
     color: #C4A233;
+}
+
+.btn-success:focus,
+.btn-success:active,
+.btn-success.active {
+    background-color: #D9A441;
+    border-color: #D9A441;
+    box-shadow: 0 0 0 .25rem #D9A44180;
+    color: #fff;
 }
 
 .btn.btn-outline-dark {
@@ -107,6 +117,14 @@ html {
     color: #F5F3ED;
 }
 
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active {
+    background-color: #D9A441;
+    border-color: #D9A441;
+    color: #26352D;
+    box-shadow: 0 0 0 .25rem rgba(217, 164, 65, .5);
+}
 /* SEÇÃO DE CONTEÚDO */
 
 
