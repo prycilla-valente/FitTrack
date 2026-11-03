@@ -22,7 +22,7 @@
     color: #79866d;
 }
 
-/* Âncoras (#treinos etc.) não ficam escondidas atrás da navbar sticky */
+
 html {
     scroll-padding-top: 90px;
 }
@@ -86,45 +86,56 @@ html {
     object-fit: cover;
 }
 
-.btn-success {
+/* BOTÕES */
+
+.btn-1 {
+    border-radius: 10px;
+    transition: all 0.3s ease;
     background-color: #D9A441;
     border-color: #D9A441;
     color: #fff;
-   
+
 }
-.btn-success:hover {
+
+.btn-1:focus,
+.btn-1:active,
+.btn-1.active {
+    outline: none;
+    box-shadow: none;
+}
+
+.btn-1:hover {
     background-color: transparent;
     border-color: #C4A233;
     color: #C4A233;
 }
 
-.btn-success:focus,
-.btn-success:active,
-.btn-success.active {
-    background-color: #D9A441;
-    border-color: #D9A441;
-    box-shadow: 0 0 0 .25rem #D9A44180;
+.btn-2 {
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    border-color: #26352D;
+    color: #26352D;
+
+
+}
+
+.btn-2:focus,
+.btn-2:active,
+.btn-2.active {
+    outline: none;
+    box-shadow: none;
+
+}
+
+.btn-2:hover {
+    background-color: #26352D;
+    border-color: #26352D;
     color: #fff;
 }
 
-.btn.btn-outline-dark {
-    border-color: #26352D;
-    color: #26352D;
-}
 
-.btn.btn-outline-dark:hover {
-    background-color: #26352D;
-    color: #F5F3ED;
-}
 
-.btn-primary:focus,
-.btn-primary:active,
-.btn-primary.active {
-    background-color: #D9A441;
-    border-color: #D9A441;
-    color: #26352D;
-    box-shadow: 0 0 0 .25rem rgba(217, 164, 65, .5);
-}
+
 /* SEÇÃO DE CONTEÚDO */
 
 
@@ -141,17 +152,7 @@ html {
     
 }
 
-.btn-primary {
-    background-color: #D9A441;
-    border-color: #D9A441;
-}
 
-.btn-primary:hover {
-    background-color: transparent;
-    border-color: #26352D;
-    color: #26352D;
-    
-}
 
 /* Responsividade */
 
