@@ -152,6 +152,20 @@ html {
     
 }
 
+/* TABELA */
+
+.ft-tabela thead th {
+    border-bottom: 3px solid #26352D;
+    border-top: 3px solid #26352D;
+    white-space: nowrap;
+    font-weight: 600;
+   }
+
+.ft-tabela td {
+    white-space: nowrap;
+}
+
+
 
 
 /* Responsividade */
