@@ -66,6 +66,7 @@
                         <li class="nav-item">
                             <a href="#contato" class="nav-link primary-color">Contato</a>
                         </li>
+                        <li class="nav-item"><a href="#modais" class="nav-link primary-color">Modais</a></li>
                     </ul>
                 </div>
             </div>
@@ -405,7 +406,7 @@
                             <div class="col-md-6">
                                 <label for="cadEmail" class="form-label">Email</label>
                                 <input type="email" class="form-control is-invalid" id="cadEmail"
-                                    value="prycillavalente.com" required>
+                                    value="prycillavalente.com">
                                 <div class="invalid-feedback">Por favor, insira um email válido: exemplo@dominio.com.br
                                 </div>
                             </div>
@@ -424,7 +425,7 @@
                             </div>
                             <div class="col-md-4">
                                 <label for="cadSenha" class="form-label">Senha</label>
-                                <input type="password" class="form-control" id="cadSenha" value="123456" required>
+                                <input type="password" class="form-control" id="cadSenha" value="123456">
 
                             </div>
 
@@ -532,7 +533,9 @@
                         </div>
                     </fieldset>
 
-                    <button type="submit" class="btn btn-1 btn-lg">Criar conta</button>
+                    <button type="submit" class="btn btn-1 btn-lg">Criar Conta</button>
+
+
 
                 </form>
             </div>
@@ -578,8 +581,8 @@
                         <div class="col-12">
                             <label for="ctMensagem" class="form-label">Mensagem</label>
                             <textarea class="form-control" id="ctMensagem" name="ctMensagem" rows="5" maxlength="500"
-                            aria-describedby="ctMensagemHelp"placeholder="Digite sua mensagem aqui"
-                            required></textarea>
+                                aria-describedby="ctMensagemHelp" placeholder="Digite sua mensagem aqui"
+                                required></textarea>
                         </div>
 
                         <div class="col-12">
@@ -592,18 +595,52 @@
                         </div>
 
                         <button type="submit" class="btn btn-2">Enviar</button>
-                        
+
                     </div>
-                </form>    
+                </form>
 
             </div>
-        </section>    
-
-        
-
-
+        </section>
 
     </main>
+
+    <section id="modais" class="py-5 bg-secondary-color">
+        <div class="container text-center">
+            <h2 class="h3 fw-bold mb-1 primary-color"><i class="bi bi-window me-2"></i>Registrar treino</h2>
+            <p class="secondary-color mb-4">Clique no botão para abrir a confirmação de treino através do modal</p>
+            <input type="checkbox" id="modal-toggle" class="ft-modal-check">
+
+            <label for="modal-toggle" class="btn btn-1 btn-lg" role="button">Feito</label>
+
+            <div class="ft-modal position-fixed top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+                role="dialog" aria-labelledby="modal-titulo" aria-modal="true">
+                <label for="modal-toggle" class="bg-dark ft-modal-backdrop position-absolute top-0 start-0 w-100 h-100"
+                    aria-label="fechar modal"></label>
+                <div class="ft-modal-box card shadow-lg position-relative text-start">
+                    <div class="card-header d-flex justify-content-between align-items-center bg-white">
+                        <h5 class="modal-title mb-0 primary-color" id="modal-titulo">
+                            <i class="bi bi-lightning-charge me-1"></i>Confirmar treino
+                        </h5>
+                        <label for="modal-toggle" class="btn-close" aria-label="Fechar"></label>
+                    </div>
+
+                    <div class="card-body">
+                        <p class="secondary-color mb-0">
+                            Deseja registrar o treino <strong>Corrida leve</strong> (45 min, 380 kcal) no seu histórico?
+                        </p>
+                    </div>
+
+                    <div class="card-footer bg-white d-flex justify-content-end gap-2">
+                        <label for="modal-toggle" class="btn btn-2">Cancelar</label>
+                        <label for="modal-toggle" class="btn btn-1">Confirmar</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+
 
 </body>
 

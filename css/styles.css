@@ -165,7 +165,51 @@ html {
     white-space: nowrap;
 }
 
+/* MODAL */
 
+.ft-modal-check {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* modal começa fechado */
+.ft-modal {
+    z-index: 1055;
+    visibility: hidden; /* esconde o modal por padrão */
+    opacity: 0;
+    transition: visibility 0.25s ease, opacity 0.25s ease;
+}
+/* modal abre quando o checkbox está marcado */
+.ft-modal-check:checked  ~ .ft-modal {
+    visibility: visible;
+    opacity: 1;
+}
+
+.ft-modal-backdrop {
+    opacity: .6;
+    cursor: pointer;
+}
+.ft-modal-box {
+    width: calc(100% - 2rem); /* deixa uma margem de 1rem de cada lado */
+    max-width: 500px;
+    transform: translateY(-20%); /* move o modal para cima */
+    transition: transform 0.25s ease;
+}
+
+.ft-modal-box:hover {
+    transform: translateY(0);
+}
+
+.ft-modal-check:checked  ~ .ft-modal .ft-modal-box {
+    transform: translateY(0); /* move o modal para a posição original quando aberto */
+}
+
+/* Mostra o foco do teclado no botão que abre o modal */
+.ft-modal-check:focus-visible ~ label.btn {
+    outline: 3px solid #0d6efd;
+    outline-offset: 2px;
+}
 
 
 /* Responsividade */
