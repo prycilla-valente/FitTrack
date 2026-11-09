@@ -21,6 +21,9 @@
 .secondary-color {
     color: #79866d;
 }
+.light-color {
+    color: #F5F3ED;
+}
 
 
 html {
@@ -77,12 +80,6 @@ html {
 
 }
 
-.btn-1:focus,
-.btn-1:active,
-.btn-1.active {
-    outline: none;
-    box-shadow: none;
-}
 
 .btn-1:hover {
     background-color: transparent;
@@ -99,13 +96,6 @@ html {
 
 }
 
-.btn-2:focus,
-.btn-2:active,
-.btn-2.active {
-    outline: none;
-    box-shadow: none;
-
-}
 
 .btn-2:hover {
     background-color: #26352D;
@@ -125,9 +115,7 @@ html {
     border-color: #1B2922;
 }
 
-.btn-primary:focus {
-    box-shadow: 0 0 0 0.25rem rgba(38, 53, 45, 0.25);
-}
+
 
 .btn-outline-secondary {
     transition: all 0.3s ease;
@@ -135,12 +123,6 @@ html {
     color: #26352D;
 }
 
-.btn-outline-secondary:focus,
-.btn-outline-secondary:active,
-.btn-outline-secondary.active {
-    outline: none;
-    box-shadow: none;
-}
 
 .btn-outline-secondary:hover {
     background-color: #26352D;
@@ -170,7 +152,7 @@ html {
    }
 
 .ft-tabela td {
-    white-space: nowrap;
+    white-space: nowrap; /* impede que o conteúdo quebre em várias linhas */
 }
 
 /* MODAL */
@@ -217,6 +199,143 @@ html {
 }
 
 
+/* ETAPA 9 - DASHBOARD */
+ 
+span.logo:hover {
+    color: #D9A441;
+}
+
+.ft-sidebar {
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem 1rem;
+    background-color: #26352D;
+    overflow-y: auto; /* se a tela for baixa, a própria sidebar rola */
+}
+
+.ft-topbar {
+    grid-area: topbar;
+    border-bottom: 2px solid #A8B89A;
+}
+ 
+.ft-dash-main {
+    grid-area: main; 
+    min-width: 0; /* permite que o conteúdo encolha corretamente */
+    overflow-y: auto; /* permite que o conteúdo role se necessário */
+}
+
+.ft-dash {
+    display: grid;
+    grid-template-columns: 260px 1fr; /* sidebar fixa + conteúdo flexível */
+    grid-template-rows: auto 1fr; /* topbar + conteúdo flexível */
+    grid-template-areas: 
+        "sidebar topbar"
+        "sidebar main";   
+    height: 100vh; /* ocupa a tela toda no desktop */
+}
+ 
+
+ 
+.ft-sidebar-brand {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    padding: 0 .5rem;
+    text-decoration: none;
+    color: #F5F3ED;
+}
+ 
+.ft-sidebar-brand img {
+    width: 40px;
+}
+ 
+.ft-sidebar-brand span {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+ 
+.ft-sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+ 
+/* Rodapé empurrado para o fim da sidebar */
+.ft-sidebar-footer {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+    margin-top: auto;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(245, 243, 237, .2);
+}
+ 
+.ft-sidebar-link {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    padding: .65rem .75rem;
+    border-radius: 10px;
+    color: #F5F3ED;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+ 
+.ft-sidebar-link:hover {
+    background-color: rgba(245, 243, 237, .12);
+    color: #D9A441;
+}
+ 
+.ft-sidebar-link.active, .ft-sidebar-link[aria-current="page"] {
+    background-color: #D9A441;
+    color: #26352D;
+    font-weight: 700;
+}
+ 
+
+
+ 
+
+.ft-menu-btn {
+    display: none;
+}
+ 
+.ft-metric-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    font-size: 1.5rem;
+}
+ 
+.ft-sidebar-check {
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+}
+ 
+/* foco do teclado aparece no botão de menu */
+.ft-sidebar-check:focus-visible ~ .ft-topbar .ft-menu-btn {
+    outline: 3px solid #D9A441;
+    outline-offset: 2px;
+}
+ 
+/* Rodapé */
+footer {
+    background-color: #26352D;
+    color: #f5f3edd5;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.7rem; /* tamanho de fonte menor para o rodapé */
+    
+}
+
+
 /* Responsividade */
 
 /* Menu vertical centralizado em telas menores */
@@ -246,4 +365,31 @@ html {
     #navbar-items .nav-link {
         padding: 0.75rem 0;
     }
+
+   .ft-dash {
+    grid-template-columns: 1fr; 
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "topbar"
+        "sidebar"
+        "main";
+    height: auto;
+   }
+
+   .ft-dash-main {
+    overflow-y: visible;
+   }
+
+   .ft-sidebar {
+    display: none;
+   }
+
+   .ft-menu-btn {
+    display: inline-flex;
+   }
+
+   .ft-sidebar-check:checked ~ .ft-sidebar {
+    display: flex;
+   }
+    
 }
