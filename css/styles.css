@@ -334,7 +334,24 @@ footer {
     font-size: 0.7rem; /* tamanho de fonte menor para o rodapé */
     
 }
+/* Validação do campo Nome */
+.campo-nome:not(:placeholder-shown):valid { 
+    border-color: #198754;
+    
+}
 
+.campo-nome:not(:placeholder-shown):invalid { 
+    border-color: #dc3545;
+}
+
+/* Validação do campo E-mail */
+.campo-email:not(:placeholder-shown):valid {
+    border-color: #198754;
+}
+
+.campo-email:not(:placeholder-shown):invalid { 
+    border-color: #dc3545;
+}
 
 /* Responsividade */
 

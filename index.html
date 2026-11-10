@@ -214,7 +214,8 @@
                                 <h5 class="card-title primary-color">Corrida e Caminhada</h5>
                                 <p class="card-text secondary-color">Registre distância, tempo e ritmo das suas
                                     atividades ao ar livre.</p>
-                                <span class="badge bg-warning text-dark align-self-start mb-3 d-none d-sm-inline-block">Em
+                                <span
+                                    class="badge bg-warning text-dark align-self-start mb-3 d-none d-sm-inline-block">Em
                                     alta</span>
 
                                 <a href="#" class="btn btn-1 mt-auto">Iniciar atividade</a>
@@ -256,7 +257,8 @@
                                 <h5 class="card-title primary-color">Comunidade FitTrack</h5>
                                 <p class="card-text secondary-color">Troque dicas, compartilhe resultados e treine com
                                     pessoas que têm os mesmos objetivos.</p>
-                                <span class="badge bg-warning text-dark align-self-start mb-3 d-none d-sm-inline-block">Em
+                                <span
+                                    class="badge bg-warning text-dark align-self-start mb-3 d-none d-sm-inline-block">Em
                                     alta</span>
 
                                 <a href="#" class="btn btn-1 mt-auto">Entrar</a>
@@ -324,9 +326,11 @@
                             <tr>
                                 <th scope="col"><i class="bi bi-calendar-event me-1 "></i>Data</th>
                                 <th scope="col"><i class="bi bi-lightning-charge me-1"></i>Treino</th>
-                                <th scope="col" class="d-none d-md-table-cell"><i class="bi bi-tag me-1"></i>Categoria</th>
+                                <th scope="col" class="d-none d-md-table-cell"><i class="bi bi-tag me-1"></i>Categoria
+                                </th>
                                 <th scope="col"><i class="bi bi-clock me-1"></i>Duração</th>
-                                <th scope="col" class="d-none d-md-table-cell"><i class="bi bi-fire me-1"></i>Calorias Queimadas</th>
+                                <th scope="col" class="d-none d-md-table-cell"><i class="bi bi-fire me-1"></i>Calorias
+                                    Queimadas</th>
                                 <th scope="col"><i class="bi bi-flag me-1"></i>Status</th>
                             </tr>
                         </thead>
@@ -355,7 +359,8 @@
                                 <td class="d-none d-md-table-cell">Cardio</td>
                                 <td>40 min</td>
                                 <td class="d-none d-md-table-cell">350 kcal</td>
-                                <td><span class="badge bg-warning text-dark"><i class="bi bi-hourglass-split me-1"></i>Em
+                                <td><span class="badge bg-warning text-dark"><i
+                                            class="bi bi-hourglass-split me-1"></i>Em
                                         andamento</span></td>
                             </tr>
                             <tr>
@@ -425,16 +430,19 @@
 
                             <div class="col-md-6">
                                 <label for="cadNome" class="form-label">Nome Completo</label>
-                                <input type="text" class="form-control is-valid" id="cadNome" name="nome" placeholder="Digite seu nome"
-                                    required>
+                                <input type="text" class="form-control campo-nome" id="cadNome" name="nome"
+                                    placeholder="Digite seu nome" required>
                                 <div class="valid-feedback">Tudo certo!</div>
+                                <div class="invalid-feedback">Por favor, informe seu nome.</div>
                             </div>
                             <div class="col-md-6">
                                 <label for="cadEmail" class="form-label">Email</label>
-                                <input type="email" class="form-control is-invalid" id="cadEmail"
-                                    placeholder="Digite seu email" name="email">
+                                <input type="email" class="form-control campo-email" id="cadEmail" placeholder="Digite seu email"
+                                    name="email" required>
+                                <div class="valid-feedback">Email válido!</div>
                                 <div class="invalid-feedback">Por favor, insira um email válido: exemplo@dominio.com.br
                                 </div>
+
                             </div>
 
                             <div class="col-md-4">
@@ -445,14 +453,14 @@
 
                             <div class="col-md-4">
                                 <label for="cadTelefone" class="form-label">Celular</label>
-                                <input type="tel" class="form-control" id="cadTelefone" name="telefone" placeholder="(21)99999-9999"
-                                aria-describedby="telHelp">
+                                <input type="tel" class="form-control" id="cadTelefone" name="telefone"
+                                    placeholder="(21)99999-9999" aria-describedby="telHelp">
                                 <div class="form-text" id="telHelp">Digite seu número de celular com DDD</div>
                             </div>
                             <div class="col-md-4">
                                 <label for="cadSenha" class="form-label">Senha</label>
-                                <input type="password" class="form-control" id="cadSenha" 
-                                name="senha" placeholder="Digite sua senha" minlength="4" required>
+                                <input type="password" class="form-control" id="cadSenha" name="senha"
+                                    placeholder="Digite sua senha" minlength="4" required>
                                 <div class="form-text">A senha deve ter no mínimo 4 caracteres</div>
 
                             </div>
@@ -468,16 +476,16 @@
                                 <label for="cadUsuario" class="form-label">Nome de usuário</label>
                                 <div class="input-group">
                                     <span class="input-group-text">@</span>
-                                    <input type="text" class="form-control" id="cadUsuario" 
-                                        name="usuario" placeholder="Ex: seu.usuario" required>
+                                    <input type="text" class="form-control" id="cadUsuario" name="usuario"
+                                        placeholder="Ex: seu.usuario" required>
                                 </div>
                             </div>
 
                             <div class="col-md-4">
                                 <label for="cadPeso" class="form-label">Peso</label>
                                 <div class="input-group">
-                                    <input type="number" step="0.1" class="form-control" id="cadPeso"
-                                        name="peso" placeholder="Ex: 58.1" required>
+                                    <input type="number" step="0.1" class="form-control" id="cadPeso" name="peso"
+                                        placeholder="Ex: 58.1" required>
                                     <span class="input-group-text">kg</span>
                                 </div>
                             </div>
@@ -486,8 +494,8 @@
                                 <label for="cadAltura" class="form-label">Altura</label>
                                 <div class="input-group">
                                     <span class="input-group-text"><i class="bi bi-rulers"></i>m</span>
-                                    <input type="number" step="0.01" class="form-control" id="cadAltura"
-                                        name="altura" placeholder="Ex: 1.70" required>
+                                    <input type="number" step="0.01" class="form-control" id="cadAltura" name="altura"
+                                        placeholder="Ex: 1.70" required>
                                 </div>
                             </div>
 
@@ -531,8 +539,8 @@
                                     <label class="form-check-label" for="objMassa">Ganhar massa muscular</label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="objetivo"
-                                        id="objCondicionamento" value="condicionamento">
+                                    <input class="form-check-input" type="radio" name="objetivo" id="objCondicionamento"
+                                        value="condicionamento">
                                     <label class="form-check-label" for="objCondicionamento">Melhorar
                                         condicionamento</label>
                                 </div>
@@ -546,15 +554,18 @@
                                     <label class="form-check-label" for="modMusculacao">Musculação</label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="modalidade" id="modCorrida" value="corrida">
+                                    <input class="form-check-input" type="checkbox" name="modalidade" id="modCorrida"
+                                        value="corrida">
                                     <label class="form-check-label" for="modCorrida">Corrida</label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="modalidade" id="modYoga" value="yoga">
+                                    <input class="form-check-input" type="checkbox" name="modalidade" id="modYoga"
+                                        value="yoga">
                                     <label class="form-check-label" for="modYoga">Yoga</label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="modalidade" id="modNatacao" value="natacao">
+                                    <input class="form-check-input" type="checkbox" name="modalidade" id="modNatacao"
+                                        value="natacao">
                                     <label class="form-check-label" for="modNatacao">Natação</label>
                                 </div>
                             </div>
@@ -615,7 +626,7 @@
                                 aria-describedby="ctMensagemHelp" placeholder="Digite sua mensagem aqui"
                                 required></textarea>
 
-                                <div class="form-text" id="ctMensagemHelp">Máximo de 500 caracteres.</div>
+                            <div class="form-text" id="ctMensagemHelp">Máximo de 500 caracteres.</div>
 
                         </div>
 
@@ -710,8 +721,8 @@
 
                 <div class="ft-topbar d-flex align-items-center gap-3 px-3 px-md-4 py-3 bg-secondary-color">
 
-                    <label for="sidebar-toggle" class="btn btn-2 ft-menu-btn" role="button"
-                        aria-label="Abrir menu"><i class="bi bi-list"></i></label>
+                    <label for="sidebar-toggle" class="btn btn-2 ft-menu-btn" role="button" aria-label="Abrir menu"><i
+                            class="bi bi-list"></i></label>
 
                     <div class="me-auto">
                         <div class="h4 fw-bold mb-0 primary-color">Dashboard</div>
@@ -801,9 +812,11 @@
                                             <tr>
                                                 <th scope="col"><i class="bi bi-calendar-event me-1 "></i>Data</th>
                                                 <th scope="col"><i class="bi bi-lightning-charge me-1"></i>Treino</th>
-                                                <th scope="col" class="d-none d-md-table-cell d-lg-table-cell"><i class="bi bi-tag me-1"></i>Categoria</th>
+                                                <th scope="col" class="d-none d-md-table-cell d-lg-table-cell"><i
+                                                        class="bi bi-tag me-1"></i>Categoria</th>
                                                 <th scope="col"><i class="bi bi-clock me-1"></i>Duração</th>
-                                                <th scope="col" class="d-none d-md-table-cell d-lg-table-cell"><i class="bi bi-fire me-1"></i>Calorias Queimadas</th>
+                                                <th scope="col" class="d-none d-md-table-cell d-lg-table-cell"><i
+                                                        class="bi bi-fire me-1"></i>Calorias Queimadas</th>
                                                 <th scope="col"><i class="bi bi-flag me-1"></i>Status</th>
                                             </tr>
                                         </thead>
